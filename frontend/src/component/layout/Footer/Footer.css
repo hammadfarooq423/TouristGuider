@@ -1,0 +1,125 @@
+#footer {
+  margin-top: 10vmax;
+  padding: 2vmax;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+.leftFooter {
+  width: 30%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* .leftFooter > h4 {
+  font-family: "Roboto";
+  font-size: 1vmax;
+} */
+.leftFooter > p {
+  text-align: justify;
+  font-size: 1.2vmax;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.leftFooter > img {
+  width: 15vmax;
+  margin: 1vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.midFooter {
+  width: 15%;
+  text-align: center;
+}
+
+.midFooter > h5 {
+  font-family: "Roboto";
+  font-size: 1.4vmax;
+  text-decoration: underline;
+}
+.midFooter >li {
+  list-style: none;
+  max-width: 60%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 1vmax auto;
+}
+.midFooter >li >a{
+  text-decoration: none;
+  color: white;
+}
+.rightFooter {
+  width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightFooter > h4 {
+  font-family: "Roboto";
+  font-size: 1.4vmax;
+  text-decoration: underline;
+}
+.rightFooter > a {
+  text-decoration: none;
+  font-size: 1.3vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  transition: all 0.5s;
+  margin: 0.5vmax;
+}
+
+.rightFooter > a:hover {
+  color: #eb4034;
+}
+
+
+.rightFooters{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.rightFooters >h5{
+  text-align: center;
+  text-decoration: underline;
+}
+.rightFooters > div{
+  margin: 1vmax 0;
+}
+.rightFooters > div>  h6{
+  font-size: 1.5vmax;
+  font-family: "Roboto";
+
+}
+
+@media screen and (max-width: 768px) {
+ #footer{
+    flex-direction: column;
+  }
+  .leftFooter{
+    width: 100%;
+    margin: 2vmax 0;
+  }
+  .midFooter{
+    width: 100%;
+    margin: 2vmax 0;
+    
+  }
+  .rightFooter{
+    margin: 2vmax 0;
+    width: 100%;
+    
+  }
+  .rightFooters{
+    width: 100%;
+    margin: 2vmax 0;
+
+  }
+}
